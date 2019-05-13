@@ -13,7 +13,7 @@
         android:src="@mipmap/img_logo"
         android:layout_marginHorizontal="30dp"/>
 
-        <LinearLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="3"
@@ -23,16 +23,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginBottom="5dp"
                 android:text="Đăng nhập"
                 android:textColor="#1A1A1A"
                 android:textSize="17sp"
-                android:layout_marginHorizontal="30dp"
-                android:layout_marginBottom="5dp"
-                android:textStyle="bold|italic"
-                />
+                android:textStyle="bold|italic" />
 
             <View
                 android:layout_width="match_parent"
@@ -42,60 +42,61 @@
         </LinearLayout>
 
 
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
             android:text="Xin chào"
             android:textColor="#000"
             android:textSize="49sp"
-            android:textStyle="bold"
-            android:layout_marginLeft="30dp"/>
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
             android:text="Đăng nhập bằng số điện thoại"
-            android:textSize="14sp"
             android:textColor="#1A1A1A"
-            android:layout_marginLeft="25dp"/>
+            android:textSize="14sp" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@drawable/gray_round_background"
             android:layout_marginHorizontal="30dp"
             android:layout_marginVertical="10dp"
+            android:background="@drawable/gray_round_background"
             android:hint="Số điện thoại"
-            android:paddingLeft="10dp"/>
+            android:paddingLeft="10dp" />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_bg"
             android:layout_marginHorizontal="30dp"
             android:layout_marginVertical="10dp"
-            >
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Đăng nhập"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:textColor="#FFFFFF"
-            android:textSize="30dp"
-            android:paddingVertical="5dp"
-            android:fontFamily="@font/roboto_black"
-            />
+            android:background="@drawable/button_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/roboto_black"
+                android:gravity="center"
+                android:paddingVertical="5dp"
+                android:text="Đăng nhập"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
 
             <ImageView
                 android:id="@+id/img_next"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:src="@drawable/ic_nxpage"
-                android:layout_marginLeft="280dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
                 android:layout_marginTop="2dp"
-                />
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_nxpage"
+                android:layout_alignParentRight="true" />
 
 
         </RelativeLayout>
@@ -103,22 +104,22 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hình thức đăng nhập khác"
+            android:layout_marginTop="15dp"
             android:gravity="center"
-            android:layout_marginTop="15dp"/>
+            android:text="Hình thức đăng nhập khác" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp">
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@mipmap/ic_fb"
-                android:layout_marginRight="20dp"/>
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/ic_fb" />
 
             <ImageView
                 android:layout_width="80dp"
