@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddd">
+
+    <View
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="#00f"
+        android:layout_marginLeft="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/v_bluebox">
+
+    </View>
+    <View
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="#ff0"
+        android:id="@+id/yellowbox"
+        android:layout_below="@+id/v_bluebox"
+        android:layout_centerHorizontal="true">
+    </View>
+
+
+</RelativeLayout>
