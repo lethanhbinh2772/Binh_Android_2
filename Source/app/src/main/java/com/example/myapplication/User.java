@@ -1,38 +1,40 @@
 package com.example.myapplication;
 
-public class User {
-    int id;
-    String username,phoneNumber,profileUrl;
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 
-    public int getId() {
-        return id;
+public class User extends AppCompatActivity{
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.user_layout);
+        init();
+
+    }
+    void init() {
+        TextView edtEditInfo = findViewById(R.id.btn_edit_profile);
+        LinearLayout relatReturn = findViewById(R.id.ln_logout);
+        edtEditInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(User.this, InfoEdittingActivity.class);
+                startActivity(intent);
+            }
+        });
+        relatReturn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(User.this, LoginActivity.class);
+                startActivity(intent2);
+            }
+        });
+
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
 
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
-
-    public String getProfileUrl() {
-        return profileUrl;
-    }
-
-    public void setProfileUrl(String profileUrl) {
-        this.profileUrl = profileUrl;
-    }
 }
