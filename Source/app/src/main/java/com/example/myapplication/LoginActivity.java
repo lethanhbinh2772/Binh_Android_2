@@ -42,6 +42,18 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
+        imgFB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(LoginActivity.this, "Chưa hỗ trợ", Toast.LENGTH_SHORT).show();
+            }
+        });
+        imgGG.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(LoginActivity.this, "Chưa hỗ trợ", Toast.LENGTH_SHORT).show();
+            }
+        });
 
     }
     boolean checkValid(){
