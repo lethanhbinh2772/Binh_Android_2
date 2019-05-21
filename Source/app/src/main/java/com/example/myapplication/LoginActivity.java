@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -13,12 +12,17 @@ import android.widget.Toast;
 public class LoginActivity extends AppCompatActivity {
     EditText edtPhoneNumber;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_layout);
-        init(); checkValid();
+        init();
+        checkValid();
     }
+
+
+
     void init(){
         edtPhoneNumber = findViewById(R.id.edt_phone_number);
         RelativeLayout relatLogin = findViewById(R.id.rl_login_button);
@@ -32,9 +36,20 @@ public class LoginActivity extends AppCompatActivity {
                 if(checkValid()){
                     //Chuyển màn hình
                     //Tạo đối tượng intent
+                    Intent intent = new Intent(LoginActivity.this, UserActivity.class);
 
-                    Intent intent = new Intent(LoginActivity.this, User.class);
+                    User user ;
+                    user = new User();
+                    user.setUsername("Elon Musk");
+                    user.setPhoneNumber(edtPhoneNumber.getText().toString());
+                    user.setProfileUrl("https://pbs.twimg.com/profile_images/1123386434226774016/mQ4Ms0jR_400x400.jpg");
+                    user.setId(1);
+
+                    intent.putExtra("user",user);
+
+
                     startActivity(intent);
+
 
                 }else{
                     //Thông báo lỗi
