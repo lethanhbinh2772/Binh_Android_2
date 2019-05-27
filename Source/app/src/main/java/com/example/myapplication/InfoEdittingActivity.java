@@ -5,11 +5,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class InfoEdittingActivity extends AppCompatActivity {
-
+    RelativeLayout btnUpdateInfo;
+    ImageView btnBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,22 +20,20 @@ public class InfoEdittingActivity extends AppCompatActivity {
     }
 
     void init() {
-        TextView btnUpdateInfo = findViewById(R.id.btn_update_info);
-        ImageView btnBack = findViewById(R.id.img_back_edif);
+        btnUpdateInfo = findViewById(R.id.rl_info_verification);
+        btnBack = findViewById(R.id.img_back_ifet);
         btnUpdateInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(InfoEdittingActivity.this, "Cập nhật thành công!", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(InfoEdittingActivity.this, UserActivity.class);
-                startActivity(intent);
+                Intent intentUpdateInfo = new Intent(InfoEdittingActivity.this, UserActivity.class);
+                startActivity(intentUpdateInfo);
             }
         });
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(InfoEdittingActivity.this, "Chưa cập nhật, thông tin lưu nháp!", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(InfoEdittingActivity.this, UserActivity.class);
-                startActivity(intent);
+                Intent intentBackWoSave = new Intent(InfoEdittingActivity.this, UserActivity.class);
+                startActivity(intentBackWoSave);
             }
         });
 

@@ -11,9 +11,11 @@ import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 
+import java.io.Serializable;
+
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class UserActivity extends AppCompatActivity {
+public class UserActivity extends AppCompatActivity implements Serializable {
     TextView tvPhoneNo;
     TextView tvName;
     TextView tvEdit;
@@ -21,8 +23,8 @@ public class UserActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.user_layout);
-        init();
-        getData();
+        init();getData();
+
 
 
     }
@@ -81,7 +83,8 @@ public class UserActivity extends AppCompatActivity {
         relatTransaction.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(UserActivity.this, "Đang phát triển", Toast.LENGTH_SHORT).show();
+                Intent intent3 = new Intent(UserActivity.this, TransactionHistoryActivity.class);
+                startActivity(intent3);
             }
         });
         btnBackToHome.setOnClickListener(new View.OnClickListener() {

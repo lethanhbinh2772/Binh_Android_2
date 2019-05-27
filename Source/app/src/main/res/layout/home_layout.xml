@@ -20,11 +20,12 @@
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="15dp"
+        android:layout_margin="10dp"
         card_view:cardCornerRadius="35dp"
-        card_view:contentPadding="5dp"
+        card_view:contentPadding="3dp"
         card_view:cardBackgroundColor="#dddd"
-        card_view:cardElevation="4dp"
+        card_view:cardElevation="10dp"
+        card_view:cardMaxElevation="0dp"
 
         >
     <LinearLayout
@@ -196,7 +197,9 @@
         <RelativeLayout
             android:layout_width="250dp"
             android:layout_height="match_parent"
-            android:background="@mipmap/ic_test_news_2">
+            android:background="@mipmap/ic_test_news_2"
+
+            >
             <TextView
                 android:id="@+id/tv_discount_01"
                 android:layout_width="wrap_content"
@@ -442,6 +445,8 @@ lên đến 50%"
             android:padding="10dp"/>
         <ImageView
             android:layout_width="0dp"
+            android:clickable="true"
+android:id="@+id/ic_user_profile"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:src="@mipmap/ic_user2"

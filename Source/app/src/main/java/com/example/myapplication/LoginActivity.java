@@ -10,8 +10,8 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
-    EditText edtPhoneNumber;
 
+    EditText edtPhoneNumber;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,17 +37,13 @@ public class LoginActivity extends AppCompatActivity {
                     //Chuyển màn hình
                     //Tạo đối tượng intent
                     Intent intent = new Intent(LoginActivity.this, UserActivity.class);
-
                     User user ;
                     user = new User();
                     user.setUsername("Elon Musk");
                     user.setPhoneNumber(edtPhoneNumber.getText().toString());
                     user.setProfileUrl("https://pbs.twimg.com/profile_images/1123386434226774016/mQ4Ms0jR_400x400.jpg");
                     user.setId(1);
-
                     intent.putExtra("user",user);
-
-
                     startActivity(intent);
 
 
