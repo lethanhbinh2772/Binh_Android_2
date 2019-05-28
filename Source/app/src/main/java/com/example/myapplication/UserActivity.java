@@ -10,7 +10,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.io.Serializable;
 
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -23,6 +28,19 @@ public class UserActivity extends AppCompatActivity implements Serializable {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.user_layout);
+        String userHomeData = loadJSONFromAsset();
+        try {
+            JSONObject jsonUserHomeData = new JSONObject(userHomeData);
+            JSONArray jsonArrayCustomerDetail = jsonUserHomeData.getJSONArray("customerDetail");
+            /*String customerName = jsonCustomerDetail.getString("customerName");
+            String phoneNumber = jsonCustomerDetail.getString("phoneNumber");
+            String profileAvatarUrl = jsonCustomerDetail.getString("profileAvatar");*/
+            JSONObject userNo1 = jsonArrayCustomerDetail.getJSONObject(1);
+
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
         init();getData();
 
 
@@ -127,6 +145,21 @@ public class UserActivity extends AppCompatActivity implements Serializable {
         });
 
 
+    }
+    public String loadJSONFromAsset() {
+        String str = null;
+        try {
+            InputStream is = getAssets().open("homeDekko.json");
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+            str = new String(buffer, "UTF-8");
+        } catch (IOException ex) {
+            ex.printStackTrace();
+            return null;
+        }
+        return str;
     }
 
 

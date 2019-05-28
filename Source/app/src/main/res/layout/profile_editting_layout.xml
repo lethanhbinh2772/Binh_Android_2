@@ -52,13 +52,16 @@
                 android:layout_weight="1.1"
                 android:text="Tên"
                 android:textColor="#262626"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:gravity="center_vertical"/>
 
-            <TextView
+            <EditText
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2.9"
-                android:text="Bình" />
+                android:hint="Bình"
+                android:textSize="15sp"
+                />
         </LinearLayout>
 
         <LinearLayout
@@ -74,13 +77,15 @@
                 android:layout_weight="1.1"
                 android:text="Số điện thoại"
                 android:textColor="#262626"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:gravity="center_vertical"/>
 
-            <TextView
+            <EditText
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2.9"
-                android:text="0912840538" />
+                android:hint="0912840538"
+                android:textSize="15sp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -96,13 +101,15 @@
                 android:layout_weight="1.1"
                 android:text="Ngày sinh"
                 android:textColor="#262626"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:gravity="center_vertical"/>
 
-            <TextView
+            <EditText
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2.9"
-                android:text="27/07/2000" />
+                android:hint="27/07/2000"
+                android:textSize="15sp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -118,13 +125,15 @@
                 android:layout_weight="1.1"
                 android:text="Giới tính"
                 android:textColor="#262626"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:gravity="center_vertical"/>
 
-            <TextView
+            <EditText
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2.9"
-                android:text="Không xác định" />
+                android:hint="Không xác định"
+                android:textSize="15sp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -140,13 +149,16 @@
                 android:layout_weight="1.1"
                 android:text="Email"
                 android:textColor="#262626"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:gravity="center_vertical"/>
 
-            <TextView
+            <EditText
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2.9"
-                android:text="meomeo@kitty.com" />
+                android:hint="meomeo@kitty.com"
+                android:textSize="15sp"
+                />
         </LinearLayout>
 
         <View
@@ -177,13 +189,15 @@
                 android:layout_weight="1.1"
                 android:text="Địa chỉ"
                 android:textColor="#262626"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:gravity="center_vertical"/>
 
-            <TextView
+            <EditText
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2.9"
-                android:text="2019A 74001" />
+                android:hint="2019A 74001"
+                android:textSize="15sp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -198,13 +212,15 @@
                 android:layout_weight="1.1"
                 android:text="Tỉnh thành"
                 android:textColor="#262626"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:gravity="center_vertical"/>
 
-            <TextView
+            <EditText
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2.9"
-                android:text="Low Earth Orbit" />
+                android:hint="Low Earth Orbit"
+                android:textSize="15sp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -219,13 +235,15 @@
                 android:layout_weight="1.1"
                 android:text="Quận huyện"
                 android:textColor="#262626"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:gravity="center_vertical"/>
 
-            <TextView
+            <EditText
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2.9"
-                android:text="Polar Region" />
+                android:hint="Polar Region"
+                android:textSize="15sp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -240,13 +258,15 @@
                 android:layout_weight="1.1"
                 android:text="Phường xã"
                 android:textColor="#262626"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:gravity="center_vertical"/>
 
-            <TextView
+            <EditText
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2.9"
-                android:text="345 km x 451 km" />
+                android:hint="345 km x 451 km"
+                android:textSize="15sp"/>
         </LinearLayout>
     </LinearLayout>
     <RelativeLayout

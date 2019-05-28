@@ -1,0 +1,17 @@
+{
+  "customerDetail": [
+    {
+      "id": "1",
+      "customerName": "Lê Thanh Bình",
+      "phoneNumber": "0912840538",
+      "profileAvatar": "https://o.aolcdn.com/images/dims3/GLOB/legacy_thumbnail/1028x675/format/jpg/quality/85/http%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2Fa4b9db4764a8ae2cd84aedf5851564b5%2F0%2Faggressive-kitten-picture-id855025366"
+    },
+
+    {
+      "id": "2",
+      "customerName": "Elon Musk",
+      "phoneNumber": "288301345",
+      "profileAvatar": "https://pbs.twimg.com/profile_images/1123386434226774016/mQ4Ms0jR_400x400.jpg"
+    }
+  ]
+}
