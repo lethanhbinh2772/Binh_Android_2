@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.Controller.Main;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,8 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
-import android.widget.Toast;
+
+import com.example.myapplication.R;
 
 public class InfoEdittingActivity extends AppCompatActivity {
     RelativeLayout btnUpdateInfo;

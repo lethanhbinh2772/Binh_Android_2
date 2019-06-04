@@ -299,7 +299,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="0.65"
         android:weightSum="5"
         android:orientation="horizontal"
         android:background="#EE2D35">
@@ -308,7 +308,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:src="@mipmap/ic_home"
-            android:padding="10dp"/>
+            android:padding="10dp"
+            />
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -321,7 +322,7 @@
             android:layout_weight="1"
             android:src="@mipmap/ic_gift"
             android:padding="10dp"/>
-"/>
+
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -330,6 +331,8 @@
             android:padding="10dp"/>
         <ImageView
             android:layout_width="0dp"
+            android:clickable="true"
+            android:id="@+id/ic_user_profile"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:src="@mipmap/ic_user2"
@@ -337,8 +340,47 @@
 
 
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.35"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:background="#EE2D35">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Trang chủ"
+            android:gravity="top|center_horizontal"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Tích điểm"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Dùng điểm"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Thông báo"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Tài khoản"
+            android:gravity="center"/>
 
-
-
-
+    </LinearLayout>
 </LinearLayout>
+
+
+

@@ -1,500 +1,545 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-<LinearLayout android:layout_width="match_parent"
-            android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="#FFFCCC"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-<TextView android:layout_width="match_parent"
-            android:layout_height="50dp"
-    android:text="Xin chào,"
-    android:gravity="center_vertical"
-    android:id="@+id/tv_greeting"
-    />
+    android:weightSum="10">
 
-
-    <android.support.v7.widget.CardView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        card_view:cardCornerRadius="35dp"
-        card_view:contentPadding="3dp"
-        card_view:cardBackgroundColor="#dddd"
-        android:elevation="2dp"
-
-        >
-    <LinearLayout
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:weightSum="6"
-        android:orientation="vertical"
-        android:background="@drawable/home_options_layout"
-        >
-        <LinearLayout
+        android:layout_height="0dp"
+        android:layout_weight="9">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:weightSum="5"
-            android:background="@drawable/bottom_stroke_template"
-            android:layout_marginHorizontal="20dp"
-            >
+            android:layout_height="wrap_content"
+            android:background="#FFFCCC"
+            android:orientation="vertical">
+
             <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="3"
-                android:text="Điểm tích lũy"
-                android:textSize="25sp"
-                android:textStyle="bold"
+                android:id="@+id/tv_greeting"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:text="Xin chào," />
+
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="2dp"
+                card_view:cardBackgroundColor="#dddd"
+                card_view:cardCornerRadius="35dp"
+                card_view:contentPadding="3dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@drawable/home_options_layout"
+                    android:orientation="vertical"
+                    android:weightSum="6">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bottom_stroke_template"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:text="Điểm tích lũy"
+                            android:textColor="#262626"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:gravity="right|center_vertical"
+                            android:text="420"
+                            android:textColor="#DB4449"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:src="@mipmap/ic_currency" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1.5"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="15dp"
+                            android:src="@mipmap/layer1" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="15dp"
+                            android:src="@mipmap/tichdiem" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="15dp"
+                            android:src="@mipmap/asset1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|top|center_horizontal"
+                            android:text="Tích điểm" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|top|center_horizontal"
+                            android:text="Dùng điểm" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|top|center_horizontal"
+                            android:text="Tiện ích" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.5"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="15dp"
+                            android:src="@mipmap/asset4" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="15dp"
+                            android:src="@mipmap/asset3" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="15dp"
+                            android:src="@mipmap/asset2" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="top|center_horizontal"
+                            android:text="Hỏi đáp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="top|center_horizontal"
+                            android:text="Đặt hàng" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="top|center_horizontal"
+                            android:text="Báo giá" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:text="Tin tức"
                 android:textColor="#262626"
-                android:gravity="center"/>
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1.5"
-                android:text="420"
-                android:textColor="#DB4449"
-                android:textStyle="bold"
                 android:textSize="25sp"
-                android:gravity="right|center_vertical"
-                />
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.5"
-                android:src="@mipmap/ic_currency"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1.5"
-            android:orientation="horizontal"
-            android:weightSum="3"
-            android:layout_marginTop="10dp"
-            >
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@mipmap/layer1"
-                android:padding="15dp"
-                />
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@mipmap/tichdiem"
-                android:padding="15dp"/>
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@mipmap/asset1"
-                android:padding="15dp"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:weightSum="3"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="Tích điểm"
-                android:gravity="center|top|center_horizontal"/>
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="Dùng điểm"
-                android:gravity="center|top|center_horizontal"/>
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="Tiện ích"
-                android:gravity="center|top|center_horizontal"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1.5"
-            android:orientation="horizontal"
-            android:weightSum="3">
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@mipmap/asset4"
-                android:padding="15dp"
-                />
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@mipmap/asset3"
-                android:padding="15dp"/>
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@mipmap/asset2"
-                android:padding="15dp"/>
+                android:textStyle="bold" />
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:weightSum="3">
-            <TextView
-                android:layout_width="0dp"
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="Hỏi đáp"
-                android:gravity="top|center_horizontal"/>
+                android:layout_marginLeft="25dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="250dp"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/ic_test_news_2"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_discount_01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Khuyến mãi
+lên đến 50%"
+                            android:textColor="#FEFEFE" />
+
+                        <RelativeLayout
+                            android:id="@+id/rl_details_button_04"
+                            android:layout_width="100dp"
+                            android:layout_height="45dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginVertical="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/login_button_selector"
+                            android:clickable="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="8dp"
+                                android:fontFamily="@font/roboto_black"
+                                android:gravity="center"
+                                android:paddingVertical="5dp"
+                                android:text="Chi tiết"
+                                android:textColor="#FFFFFF"
+                                android:textSize="15dp" />
+
+                            <ImageView
+                                android:id="@+id/img_details_news_04"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="2dp"
+                                android:padding="3dp"
+                                android:src="@mipmap/ic_nextpage" />
+
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="250dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:background="@mipmap/ic_test_news_3">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Khuyến mãi
+lên đến 50%"
+                            android:textAlignment="center"
+                            android:textColor="#FEFEFE" />
+
+                        <RelativeLayout
+                            android:id="@+id/rl_details_button_02"
+                            android:layout_width="100dp"
+                            android:layout_height="45dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginVertical="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/login_button_selector"
+                            android:clickable="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="8dp"
+                                android:fontFamily="@font/roboto_black"
+                                android:gravity="center"
+                                android:paddingVertical="5dp"
+                                android:text="Chi tiết"
+                                android:textColor="#FFFFFF"
+                                android:textSize="15dp" />
+
+                            <ImageView
+                                android:id="@+id/img_details_news_02"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="2dp"
+                                android:padding="3dp"
+                                android:src="@mipmap/ic_nextpage" />
+
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="250dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:background="@mipmap/ic_test_news_4">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Khuyến mãi
+lên đến 50%"
+                            android:textAlignment="center"
+                            android:textColor="#FEFEFE" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.RecyclerView>
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:text="Khuyến mãi"
+                android:textColor="#262626"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="Đặt hàng"
-                android:gravity="top|center_horizontal"/>
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="Báo giá"
-                android:gravity="top|center_horizontal"/>
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="250dp"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/ic_discount_03">
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="250dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:background="@mipmap/ic_discount_02">
+
+                        <TextView
+                            android:id="@+id/tv_news_02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp" />
+
+                        <RelativeLayout
+                            android:id="@+id/rl_details_button"
+                            android:layout_width="100dp"
+                            android:layout_height="45dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginVertical="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/login_button_selector"
+                            android:clickable="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="8dp"
+                                android:fontFamily="@font/roboto_black"
+                                android:gravity="center"
+                                android:paddingVertical="5dp"
+                                android:text="Chi tiết"
+                                android:textColor="#FFFFFF"
+                                android:textSize="15dp" />
+
+                            <ImageView
+                                android:id="@+id/img_details_discount_02"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="2dp"
+                                android:padding="3dp"
+                                android:src="@mipmap/ic_nextpage" />
+
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
         </LinearLayout>
 
-    </LinearLayout>
-    </android.support.v7.widget.CardView>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="Tin tức"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:textColor="#262626"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="20dp"/>
-    <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="25dp">
+    </ScrollView>
+
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.65"
+        android:background="#EE2D35"
         android:orientation="horizontal"
-        >
-        <RelativeLayout
-            android:layout_width="250dp"
-            android:layout_height="match_parent"
-            android:background="@mipmap/ic_test_news_2"
+        android:weightSum="5">
 
-            >
-            <TextView
-                android:id="@+id/tv_discount_01"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Khuyến mãi
-lên đến 50%"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="15dp"
-                android:textColor="#FEFEFE"
-                />
-            <RelativeLayout
-                android:id="@+id/rl_details_button_04"
-                android:clickable="true"
-                android:layout_width="100dp"
-                android:layout_height="45dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginVertical="10dp"
-                android:background="@drawable/login_button_selector"
-                android:layout_centerVertical="true"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentLeft="true">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:fontFamily="@font/roboto_black"
-                    android:gravity="center"
-                    android:paddingVertical="5dp"
-                    android:text="Chi tiết"
-                    android:textColor="#FFFFFF"
-                    android:textSize="15dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginLeft="8dp"/>
-
-                <ImageView
-                    android:id="@+id/img_details_news_04"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_centerVertical="true"
-                    android:layout_marginRight="2dp"
-                    android:src="@mipmap/ic_nextpage"
-                    android:layout_alignParentRight="true"
-                    android:padding="3dp"/>
-
-
-            </RelativeLayout>
-
-
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_width="250dp"
-            android:layout_height="match_parent"
-            android:background="@mipmap/ic_test_news_3"
-            android:layout_marginLeft="20dp"
-            >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Khuyến mãi
-lên đến 50%"
-                android:textAlignment="center"
-                android:textColor="#FEFEFE"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="15dp"
-                />
-            <RelativeLayout
-                android:id="@+id/rl_details_button_02"
-                android:clickable="true"
-                android:layout_width="100dp"
-                android:layout_height="45dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginVertical="10dp"
-                android:background="@drawable/login_button_selector"
-                android:layout_centerVertical="true"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentLeft="true">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:fontFamily="@font/roboto_black"
-                    android:gravity="center"
-                    android:paddingVertical="5dp"
-                    android:text="Chi tiết"
-                    android:textColor="#FFFFFF"
-                    android:textSize="15dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginLeft="8dp"/>
-
-                <ImageView
-                    android:id="@+id/img_details_news_02"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_centerVertical="true"
-                    android:layout_marginRight="2dp"
-                    android:src="@mipmap/ic_nextpage"
-                    android:layout_alignParentRight="true"
-                    android:padding="3dp"/>
-
-
-            </RelativeLayout>
-
-
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_width="250dp"
-            android:layout_height="match_parent"
-            android:background="@mipmap/ic_test_news_4"
-            android:layout_marginLeft="20dp"
-            >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Khuyến mãi
-lên đến 50%"
-                android:textAlignment="center"
-                android:textColor="#FEFEFE"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="15dp"
-                />
-
-
-
-        </RelativeLayout>
-
-    </LinearLayout>
-    </HorizontalScrollView>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="Khuyến mãi"
-        android:textColor="#262626"
-        android:textStyle="bold"
-        android:textSize="25sp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="20dp"/>
-    <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="25dp"
-        android:layout_marginBottom="20dp">
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="150dp"
-        android:orientation="horizontal">
-        <RelativeLayout
-            android:layout_width="250dp"
-            android:layout_height="match_parent"
-            android:background="@mipmap/ic_discount_03">
-
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="250dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="20dp"
-            android:background="@mipmap/ic_discount_02">
-
-            <TextView
-                android:id="@+id/tv_news_02"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="15dp" />
-
-            <RelativeLayout
-                android:id="@+id/rl_details_button"
-                android:layout_width="100dp"
-                android:layout_height="45dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentBottom="true"
-                android:layout_centerVertical="true"
-                android:layout_marginVertical="10dp"
-                android:layout_marginLeft="15dp"
-                android:background="@drawable/login_button_selector"
-                android:clickable="true">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="8dp"
-                    android:fontFamily="@font/roboto_black"
-                    android:gravity="center"
-                    android:paddingVertical="5dp"
-                    android:text="Chi tiết"
-                    android:textColor="#FFFFFF"
-                    android:textSize="15dp" />
-
-                <ImageView
-                    android:id="@+id/img_details_discount_02"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginRight="2dp"
-                    android:padding="3dp"
-                    android:src="@mipmap/ic_nextpage" />
-
-
-            </RelativeLayout>
-
-
-        </RelativeLayout>
-
-    </LinearLayout>
-
-    </HorizontalScrollView>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:weightSum="5"
-        android:orientation="horizontal"
-        android:background="#EE2D35">
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@mipmap/ic_home"
-            android:padding="10dp"/>
+            android:padding="10dp"
+            android:src="@mipmap/ic_home" />
+
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@mipmap/ic_voucher"
-            android:padding="10dp"/>
+            android:padding="10dp"
+            android:src="@mipmap/ic_voucher" />
+
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@mipmap/ic_gift"
-            android:padding="10dp"/>
-        "/>
+            android:padding="10dp"
+            android:src="@mipmap/ic_gift" />
+
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@mipmap/ic_bell2"
-            android:padding="10dp"/>
+            android:padding="10dp"
+            android:src="@mipmap/ic_bell2" />
+
         <ImageView
+            android:id="@+id/ic_user_profile"
             android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:clickable="true"
-android:id="@+id/ic_user_profile"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@mipmap/ic_user2"
-            android:padding="10dp"/>
+            android:padding="10dp"
+            android:src="@mipmap/ic_user2" />
 
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:weightSum="5"
+        android:layout_height="0dp"
+        android:layout_weight="0.35"
+        android:background="#EE2D35"
         android:orientation="horizontal"
-        android:background="#EE2D35">
+        android:weightSum="5">
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Trang chủ"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:text="Trang chủ" />
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Tích điểm"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:text="Tích điểm" />
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Dùng điểm"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:text="Dùng điểm" />
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Thông báo"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:text="Thông báo" />
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Tài khoản"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:text="Tài khoản" />
 
     </LinearLayout>
-    </LinearLayout>
-</ScrollView>
+</LinearLayout>
 

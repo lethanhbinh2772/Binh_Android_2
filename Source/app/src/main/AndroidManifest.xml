@@ -12,21 +12,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashActivity">
+        <activity android:name=".Controller.Auth.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TransactionHistoryActivity" />
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".InfoEdittingActivity" />
-        <activity android:name=".LoginActivity">
+        <activity android:name=".Controller.Main.TransactionHistoryActivity" />
+        <activity android:name=".Controller.Main.HomeActivity" />
+        <activity android:name=".Controller.Main.InfoEdittingActivity" />
+        <activity android:name=".Controller.Auth.LoginActivity">
 
         </activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".UserActivity" />
+        <activity android:name=".Controller.Main.MainActivity" />
+        <activity android:name=".Controller.Main.UserActivity" />
     </application>
 
 </manifest>

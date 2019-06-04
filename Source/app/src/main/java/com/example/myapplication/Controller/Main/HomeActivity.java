@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.Controller.Main;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +8,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.myapplication.R;
 import com.squareup.picasso.Picasso;
 
 import java.io.Serializable;

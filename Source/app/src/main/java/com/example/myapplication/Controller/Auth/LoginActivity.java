@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.Controller.Auth;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -9,6 +9,11 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
+
+import com.example.myapplication.R;
+import com.example.myapplication.Model.User;
+import com.example.myapplication.Controller.Main.UserActivity;
+import com.example.myapplication.Util.AppConfig;
 
 public class LoginActivity extends AppCompatActivity {
 

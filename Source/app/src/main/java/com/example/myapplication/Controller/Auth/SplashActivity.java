@@ -1,10 +1,14 @@
-package com.example.myapplication;
+package com.example.myapplication.Controller.Auth;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.myapplication.R;
+import com.example.myapplication.Model.User;
+import com.example.myapplication.Controller.Main.UserActivity;
+import com.example.myapplication.Util.AppConfig;
 
 public class SplashActivity extends AppCompatActivity {
 
